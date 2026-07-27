@@ -412,17 +412,71 @@
     "top_level_sheets": [
       {
         "filename": "LVC.kicad_sch",
-        "name": "Root",
+        "name": "Final Circuit",
         "uuid": "1899ce1e-c210-4160-83a8-e5a7e97aa702"
+      },
+      {
+        "filename": "untitled.kicad_sch",
+        "name": "Test 1.1",
+        "uuid": "403adfe1-51af-4c7e-94f3-ace1a53bb045"
+      },
+      {
+        "filename": "test_1.2.kicad_sch",
+        "name": "Test 1.2",
+        "uuid": "7985d7b0-cba1-44f6-bb68-92c1e6b0735c"
+      },
+      {
+        "filename": "test_2.1.kicad_sch",
+        "name": "Test 2.1",
+        "uuid": "9fe3796c-aa4a-405e-be5a-a1060b4d996f"
+      },
+      {
+        "filename": "test_2.2.kicad_sch",
+        "name": "Test 2.2",
+        "uuid": "e8c89e13-2fc2-40fb-b5c1-4374b244dd0a"
+      },
+      {
+        "filename": "test_2.3.kicad_sch",
+        "name": "Test 2.3",
+        "uuid": "424f3e55-bd99-4bdd-822e-1fe4d61e0272"
+      },
+      {
+        "filename": "test_2.4.kicad_sch",
+        "name": "Test 2.4",
+        "uuid": "945e3562-6bc8-4438-b145-65043fea81c7"
       }
     ],
-    "used_designators": "F1-2,U1-2,R1-5,#PWR1-4",
+    "used_designators": "#PWR1-12,R1-9,U1-4,F1-5",
     "variants": []
   },
   "sheets": [
     [
       "1899ce1e-c210-4160-83a8-e5a7e97aa702",
-      "Root"
+      "Final Circuit"
+    ],
+    [
+      "403adfe1-51af-4c7e-94f3-ace1a53bb045",
+      "Test 1.1"
+    ],
+    [
+      "7985d7b0-cba1-44f6-bb68-92c1e6b0735c",
+      "Test 1.2"
+    ],
+    [
+      "9fe3796c-aa4a-405e-be5a-a1060b4d996f",
+      "Test 2.1"
+    ],
+    [
+      "e8c89e13-2fc2-40fb-b5c1-4374b244dd0a",
+      "Test 2.2"
+    ],
+    [
+      "424f3e55-bd99-4bdd-822e-1fe4d61e0272",
+      "Test 2.3"
+    ],
+    [
+      "945e3562-6bc8-4438-b145-65043fea81c7",
+      "Test 2.4"
     ]
   ],
   "text_variables": {},
