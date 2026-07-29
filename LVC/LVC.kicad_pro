@@ -441,12 +441,12 @@
         "uuid": "424f3e55-bd99-4bdd-822e-1fe4d61e0272"
       },
       {
-        "filename": "test_2.4.kicad_sch",
+        "filename": "tl431_v_ref.kicad_sch",
         "name": "Test 2.4",
-        "uuid": "945e3562-6bc8-4438-b145-65043fea81c7"
+        "uuid": "de91f18d-f6dc-470d-8e5f-fdd14f0fa08b"
       }
     ],
-    "used_designators": "#PWR1-12,R1-9,U1-4,F1-5",
+    "used_designators": "#PWR1-17,R1-14,Q1-2,U1-4,F1-5",
     "variants": []
   },
   "sheets": [
@@ -475,7 +475,7 @@
       "Test 2.3"
     ],
     [
-      "945e3562-6bc8-4438-b145-65043fea81c7",
+      "de91f18d-f6dc-470d-8e5f-fdd14f0fa08b",
       "Test 2.4"
     ]
   ],

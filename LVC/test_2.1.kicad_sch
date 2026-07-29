@@ -787,22 +787,10 @@
 		)
 	)
 	(junction
-		(at 87.63 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1855316c-4c53-42b8-b475-ebe073f93c62")
-	)
-	(junction
 		(at 97.79 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c455c8a-c85b-4af3-ac37-32450d0b888e")
-	)
-	(junction
-		(at 80.01 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63b68e4d-53f8-4ef4-a849-c6dd1cf608c3")
 	)
 	(wire
 		(pts
@@ -823,16 +811,6 @@
 			(type default)
 		)
 		(uuid "16a6df20-20b4-4b52-9e4a-1ba2e3470e4b")
-	)
-	(wire
-		(pts
-			(xy 80.01 44.45) (xy 87.63 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "261aa4f1-e3ec-4bac-a932-4a32e45affd4")
 	)
 	(wire
 		(pts
@@ -983,11 +961,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6e1664c5-4318-4470-b568-3c4e60f08b64")
-		(property "Reference" "#PWR01"
-			(at 82.55 44.45 0)
-			(hide yes)
+		(property "Reference" "VCC"
+			(at 73.152 44.704 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -998,6 +974,7 @@
 		)
 		(property "Value" "+5V"
 			(at 74.93 44.4499 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1046,7 +1023,7 @@
 		(instances
 			(project "LVC"
 				(path "/9fe3796c-aa4a-405e-be5a-a1060b4d996f"
-					(reference "#PWR01")
+					(reference "VCC")
 					(unit 1)
 				)
 			)
@@ -1244,6 +1221,7 @@
 		)
 		(property "Value" "6kΩ"
 			(at 100.33 53.086 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

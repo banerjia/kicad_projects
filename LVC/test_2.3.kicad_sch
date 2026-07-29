@@ -799,32 +799,10 @@
 		(uuid "61e8d186-900c-4414-99ce-02214df65fd6")
 	)
 	(junction
-		(at 86.36 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b162078-01e9-4783-8643-a60bae669d3a")
-	)
-	(junction
-		(at 93.98 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad4fdbef-af86-44b5-867e-d77b92819f3a")
-	)
-	(junction
 		(at 100.33 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d25e9348-8c45-48cf-8e3c-cceab2d3ab60")
-	)
-	(wire
-		(pts
-			(xy 86.36 54.61) (xy 93.98 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "001adc03-485e-4bd0-947f-d144b64f44ae")
 	)
 	(wire
 		(pts
@@ -888,16 +866,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 54.61) (xy 100.33 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f1ab058-423d-4d33-b1c8-ef6ee4f9ad99")
-	)
-	(wire
-		(pts
 			(xy 100.33 96.52) (xy 100.33 106.68)
 		)
 		(stroke
@@ -915,6 +883,16 @@
 			(type default)
 		)
 		(uuid "b6deb7d5-78f4-4534-bbae-edf32c2680f3")
+	)
+	(wire
+		(pts
+			(xy 96.52 54.61) (xy 100.33 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc8ea8b3-7319-473d-9f39-b9fcf0cbb862")
 	)
 	(wire
 		(pts
@@ -945,16 +923,6 @@
 			(type default)
 		)
 		(uuid "f031768e-3267-401d-ad8b-fb1741eb62be")
-	)
-	(wire
-		(pts
-			(xy 85.09 54.61) (xy 86.36 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7dcee47-0021-4bb8-8342-a3383c16b642")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1059,6 +1027,7 @@
 		)
 		(property "Value" "6kΩ"
 			(at 123.19 68.326 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1214,10 +1183,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7aed5599-7b31-4af5-94dd-94bd4b2e14f6")
 		(property "Reference" "R2"
-			(at 102.87 91.4399 0)
+			(at 102.87 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1229,6 +1197,7 @@
 		)
 		(property "Value" "10kΩ"
 			(at 102.87 93.9799 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1288,7 +1257,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 85.09 54.61 90)
+		(at 88.9 54.61 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1296,11 +1265,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8ebe0225-5988-4bae-9fea-7c9ae16e9d75")
-		(property "Reference" "#PWR09"
-			(at 88.9 54.61 0)
-			(hide yes)
+		(property "Reference" "VCC"
+			(at 82.296 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1310,7 +1277,8 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 81.28 54.6099 90)
+			(at 85.09 54.6099 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1321,7 +1289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 54.61 0)
+			(at 88.9 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1332,7 +1300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 54.61 0)
+			(at 88.9 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1343,7 +1311,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 85.09 54.61 0)
+			(at 88.9 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1359,7 +1327,7 @@
 		(instances
 			(project "LVC"
 				(path "/424f3e55-bd99-4bdd-822e-1fe4d61e0272"
-					(reference "#PWR09")
+					(reference "VCC")
 					(unit 1)
 				)
 			)
@@ -1367,7 +1335,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 90.17 54.61 90)
+		(at 92.71 54.61 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1377,7 +1345,7 @@
 		(dnp no)
 		(uuid "97bc83bb-db96-4ce0-9fa5-33e0d92630d6")
 		(property "Reference" "F1"
-			(at 90.424 51.562 90)
+			(at 92.964 51.562 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1387,7 +1355,7 @@
 			)
 		)
 		(property "Value" "Fuse"
-			(at 90.17 50.8 90)
+			(at 92.71 50.8 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1398,7 +1366,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 56.388 90)
+			(at 92.71 56.388 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1409,7 +1377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 54.61 0)
+			(at 92.71 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1420,7 +1388,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 90.17 54.61 0)
+			(at 92.71 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1455,10 +1423,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e749e8aa-7e6d-4a66-9835-5738af1f943b")
 		(property "Reference" "R1"
-			(at 102.87 64.7699 0)
+			(at 103.124 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1470,6 +1437,7 @@
 		)
 		(property "Value" "10kΩ"
 			(at 102.87 67.3099 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

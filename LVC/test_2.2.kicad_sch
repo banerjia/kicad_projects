@@ -793,22 +793,10 @@
 		(uuid "2ce815df-34e7-4232-af92-3e2dc3b67cec")
 	)
 	(junction
-		(at 76.2 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "41b1fa7e-a526-4062-af62-30acdfa3f812")
-	)
-	(junction
 		(at 90.17 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a85c13f2-c42e-4b83-be63-425586b8f521")
-	)
-	(junction
-		(at 83.82 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba77ce7e-87ea-4418-b632-31988a50b0d0")
 	)
 	(junction
 		(at 90.17 104.14)
@@ -825,16 +813,6 @@
 			(type default)
 		)
 		(uuid "1596a8aa-1e74-4d66-bb13-20dc3a9cb24c")
-	)
-	(wire
-		(pts
-			(xy 76.2 52.07) (xy 83.82 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48ecb886-65ae-45cc-beca-b1cec40363af")
 	)
 	(wire
 		(pts
@@ -966,10 +944,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "25ab9c7e-33c5-430b-9522-a07bae9fdf5e")
 		(property "Reference" "R2"
-			(at 92.71 88.8999 0)
+			(at 92.456 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -981,6 +958,7 @@
 		)
 		(property "Value" "15kΩ"
 			(at 92.71 91.4399 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1141,6 +1119,7 @@
 		)
 		(property "Value" "6kΩ"
 			(at 113.03 65.786 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1211,7 +1190,7 @@
 		(fields_autoplaced yes)
 		(uuid "6202add1-3c10-4825-8387-2a0a19d370d6")
 		(property "Reference" "R1"
-			(at 92.71 62.2299 0)
+			(at 92.71 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1223,6 +1202,7 @@
 		)
 		(property "Value" "5kΩ"
 			(at 92.71 64.7699 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1266,10 +1246,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d17a4739-6851-4f17-a283-5038dffc9c82")
+			(uuid "d17a4739-6851-4f17-a283-5038dffc9c83")
 		)
 		(pin "2"
-			(uuid "8254dc1a-36cd-40a9-b8f7-715052a1bff9")
+			(uuid "8254dc1a-36cd-40a9-b8f7-715052a1bffa")
 		)
 		(instances
 			(project "LVC"
@@ -1370,11 +1350,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d7fc9f39-1f98-47e5-8d07-e92d57cb11ac")
-		(property "Reference" "#PWR05"
-			(at 78.74 52.07 0)
-			(hide yes)
+		(property "Reference" "VCC"
+			(at 70.358 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1385,6 +1363,7 @@
 		)
 		(property "Value" "+5V"
 			(at 71.12 52.0699 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1433,7 +1412,7 @@
 		(instances
 			(project "LVC"
 				(path "/e8c89e13-2fc2-40fb-b5c1-4374b244dd0a"
-					(reference "#PWR05")
+					(reference "VCC")
 					(unit 1)
 				)
 			)

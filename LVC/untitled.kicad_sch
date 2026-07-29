@@ -713,10 +713,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "095ca040-8045-45f2-abbf-dc0159c60fae")
 		(property "Reference" "F1"
-			(at 143.51 64.77 90)
+			(at 143.51 67.564 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -727,6 +726,7 @@
 		)
 		(property "Value" "500mA"
 			(at 143.51 67.31 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -872,10 +872,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "73df8943-9f82-42eb-93ca-ee52dc2a2efc")
 		(property "Reference" "R2"
-			(at 153.67 91.4399 0)
+			(at 153.67 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -887,6 +886,7 @@
 		)
 		(property "Value" "10kΩ"
 			(at 153.67 93.9799 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -954,10 +954,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9954bf0b-4fad-44ca-bd92-d7c8708bfa58")
 		(property "Reference" "R1"
-			(at 153.67 77.4699 0)
+			(at 153.924 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -969,6 +968,7 @@
 		)
 		(property "Value" "10kΩ"
 			(at 153.67 80.0099 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1036,11 +1036,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e311a1c5-1877-4754-b250-becc958c0aa7")
-		(property "Reference" "#PWR07"
-			(at 139.7 71.12 0)
-			(hide yes)
+		(property "Reference" "VCC"
+			(at 129.794 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1051,6 +1049,7 @@
 		)
 		(property "Value" "+5V"
 			(at 132.08 71.1199 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1099,7 +1098,7 @@
 		(instances
 			(project "LVC"
 				(path "/403adfe1-51af-4c7e-94f3-ace1a53bb045"
-					(reference "#PWR07")
+					(reference "VCC")
 					(unit 1)
 				)
 			)
