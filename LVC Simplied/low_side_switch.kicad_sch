@@ -1637,6 +1637,12 @@
 		(uuid "5f8fc593-827b-4038-9553-e8590704d896")
 	)
 	(junction
+		(at 87.63 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6427b705-5a61-4b1d-b146-d8e846a8694e")
+	)
+	(junction
 		(at 109.22 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1659,6 +1665,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9a666bf-fa60-4211-9ce0-fa2582a3167d")
+	)
+	(junction
+		(at 78.74 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc4569c7-e151-4b78-a82e-25dfe7dbb264")
 	)
 	(wire
 		(pts
@@ -1752,6 +1764,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 52.07) (xy 87.63 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44135884-eff0-4779-a883-75fd3f6fa92e")
+	)
+	(wire
+		(pts
 			(xy 59.69 46.99) (xy 59.69 50.8)
 		)
 		(stroke
@@ -1829,6 +1851,16 @@
 			(type default)
 		)
 		(uuid "754ec385-1f53-4fd7-8d39-36db03520f17")
+	)
+	(wire
+		(pts
+			(xy 78.74 52.07) (xy 78.74 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bc6d2ca-222c-4b43-914b-8d31513ca988")
 	)
 	(wire
 		(pts
@@ -1932,7 +1964,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 46.99) (xy 78.74 53.34)
+			(xy 78.74 46.99) (xy 78.74 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1950,6 +1982,16 @@
 		)
 		(uuid "ed0c7237-b58b-400c-85f9-1240bc7b3abe")
 	)
+	(wire
+		(pts
+			(xy 78.74 52.07) (xy 80.01 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f105fb79-1399-4ec7-a0f6-931e936e73db")
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 91.44 58.42 90)
@@ -1961,8 +2003,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "008436c6-8f0b-4307-b914-f75a82e74541")
-		(property "Reference" "R7"
-			(at 91.186 61.722 90)
+		(property "Reference" "R3"
+			(at 91.694 55.626 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2023,6 +2065,12 @@
 			(uuid "36019d1a-3a41-4098-bd8c-805f2ec43a0a")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "R3")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "R7")
@@ -2043,7 +2091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05490c65-871a-4e98-bd9b-4611c2f631d1")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR01"
 			(at 58.42 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -2102,9 +2150,125 @@
 			(uuid "7a71afcc-f613-4328-9132-dc907a73cc86")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:2N3906")
+		(at 81.28 58.42 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "197124c1-e7e5-4d42-8514-c4b0d685d62a")
+		(property "Reference" "Q2"
+			(at 76.2 57.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N3906"
+			(at 76.2 59.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 76.2 56.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF"
+			(at 81.28 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92"
+			(at 81.28 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 81.28 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=E 2=B 3=C"
+			(at 81.28 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ac265fbb-092d-47dd-a2b2-93ddac74e080")
+		)
+		(pin "3"
+			(uuid "3110a68c-1ea4-4515-aff6-d8b14d6052d9")
+		)
+		(pin "1"
+			(uuid "6a880911-8776-4a4e-9262-350d5513b3c7")
+		)
+		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -2122,7 +2286,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28c0e82c-6982-4087-b58a-52277c39f1b8")
-		(property "Reference" "Q3"
+		(property "Reference" "Q1"
 			(at 69.85 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2218,119 +2382,15 @@
 			(uuid "5f96a49c-0436-4190-8369-59eb09e20db4")
 		)
 		(instances
-			(project "LVC Simplied"
-				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
-					(reference "Q3")
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:2N3906")
-		(at 81.28 58.42 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "28c6eccd-f76e-4f95-9ec6-fba8f328fc87")
-		(property "Reference" "Q4"
-			(at 76.2 57.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N3906"
-			(at 76.2 59.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 76.2 60.325 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF"
-			(at 81.28 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" "-0.2A Ic, -40V Vce, Small Signal PNP Transistor, TO-92"
-			(at 81.28 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "PNP"
-			(at 81.28 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=E 2=B 3=C"
-			(at 81.28 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bbd81380-9556-427a-8673-1839a109fdf5")
-		)
-		(pin "2"
-			(uuid "d0176c87-72b8-4dee-91af-cbfd22522d76")
-		)
-		(pin "3"
-			(uuid "a538bb28-5ea4-4292-9a23-b62438564b4e")
-		)
-		(instances
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
-					(reference "Q4")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -2347,7 +2407,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36fea3fa-028d-4d29-bec7-2dba55d06bd3")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 53.086 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2410,6 +2470,12 @@
 			(uuid "5d029905-0a3c-44b0-916f-e92be08f390e")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "C2")
@@ -2430,8 +2496,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4da36333-3161-414d-bb53-deaab29adb00")
-		(property "Reference" "U2"
-			(at 91.694 49.276 90)
+		(property "Reference" "U1"
+			(at 93.98 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2440,8 +2506,8 @@
 				)
 			)
 		)
-		(property "Value" "TL431LA"
-			(at 91.948 51.816 90)
+		(property "Value" "TL431A"
+			(at 94.234 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2495,6 +2561,12 @@
 			(uuid "75d5735b-ae3f-49e8-aec2-93fd9a1f2602")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "U1")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "U2")
@@ -2573,6 +2645,12 @@
 			(uuid "a3438aff-23c2-41b2-a9d3-8b9b66afdc0f")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "#PWR02")
@@ -2591,10 +2669,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8423dd1e-b395-4f9f-b845-828d62e30c87")
-		(property "Reference" "R10"
-			(at 121.92 53.3399 0)
+		(property "Reference" "R6"
+			(at 121.92 54.864 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2656,6 +2733,12 @@
 			(uuid "13e2e19a-0fdb-46af-8cd9-efb4f17ce99a")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "R6")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "R10")
@@ -2674,10 +2757,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "92787e12-19a6-4ed3-a5ab-c6ab0ee09a3f")
-		(property "Reference" "R6"
-			(at 62.23 68.5799 0)
+		(property "Reference" "R1"
+			(at 54.61 70.104 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2739,6 +2821,12 @@
 			(uuid "8ae91ffd-daf6-48ea-80d4-2881bf0f747d")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "R6")
@@ -2757,10 +2845,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a1c72dd8-cf73-4468-85d4-a366de662f19")
-		(property "Reference" "R8"
-			(at 111.76 52.0699 0)
+		(property "Reference" "R4"
+			(at 111.506 53.086 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2822,6 +2909,12 @@
 			(uuid "106413dc-ea68-4848-a2e0-8c569dbd5882")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "R4")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "R8")
@@ -2842,7 +2935,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd3771fe-60e7-4ee9-be00-88fe188e7f9e")
-		(property "Reference" "D2"
+		(property "Reference" "D1"
 			(at 123.19 65.0874 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2915,9 +3008,95 @@
 			(uuid "c51d2596-b8a8-4f2c-9150-b33c652619a3")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 83.82 52.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f0891cb6-8fbb-4d5d-8fce-fc182409b06e")
+		(property "Reference" "R2"
+			(at 83.82 49.53 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_US"
+			(at 83.82 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 84.074 51.054 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 83.82 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74219165-318b-4cd2-908e-758d383ce707")
+		)
+		(pin "2"
+			(uuid "da1e17c6-c6da-43c9-8331-b6eaadaa7ff7")
+		)
+		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2933,10 +3112,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f9e3431d-bba7-4bb4-8927-ca1cb458fb7f")
-		(property "Reference" "R9"
-			(at 111.76 67.3099 0)
+		(property "Reference" "R5"
+			(at 111.252 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2998,6 +3176,12 @@
 			(uuid "7f48ba18-734a-496e-91e1-aa8d84a35772")
 		)
 		(instances
+			(project "low_side_switch"
+				(path "/7112f0df-75c9-4e64-bf70-7a1c84de0c11"
+					(reference "R5")
+					(unit 1)
+				)
+			)
 			(project "LVC Simplied"
 				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
 					(reference "R9")
@@ -3011,4 +3195,5 @@
 			(page "2")
 		)
 	)
+	(embedded_fonts no)
 )
