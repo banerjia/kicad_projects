@@ -256,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LVC.kicad_pro",
+    "filename": "LVC Simplied.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -411,72 +411,27 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "LVC.kicad_sch",
-        "name": "Final Circuit",
-        "uuid": "1899ce1e-c210-4160-83a8-e5a7e97aa702"
+        "filename": "LVC Simplied.kicad_sch",
+        "name": "High Side",
+        "uuid": "5a583db8-a535-4166-9926-56d734581311"
       },
       {
-        "filename": "untitled.kicad_sch",
-        "name": "Test 1.1",
-        "uuid": "403adfe1-51af-4c7e-94f3-ace1a53bb045"
-      },
-      {
-        "filename": "test_1.2.kicad_sch",
-        "name": "Test 1.2",
-        "uuid": "7985d7b0-cba1-44f6-bb68-92c1e6b0735c"
-      },
-      {
-        "filename": "test_2.1.kicad_sch",
-        "name": "Test 2.1",
-        "uuid": "9fe3796c-aa4a-405e-be5a-a1060b4d996f"
-      },
-      {
-        "filename": "test_2.2.kicad_sch",
-        "name": "Test 2.2",
-        "uuid": "e8c89e13-2fc2-40fb-b5c1-4374b244dd0a"
-      },
-      {
-        "filename": "test_2.3.kicad_sch",
-        "name": "Test 2.3",
-        "uuid": "424f3e55-bd99-4bdd-822e-1fe4d61e0272"
-      },
-      {
-        "filename": "tl431_v_ref.kicad_sch",
-        "name": "Test 2.4",
-        "uuid": "de91f18d-f6dc-470d-8e5f-fdd14f0fa08b"
+        "filename": "low_side_switch.kicad_sch",
+        "name": "Low Side",
+        "uuid": "acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
       }
     ],
-    "used_designators": "D1-2,#PWR1-17,Q1-2,U1-4,F1-5,R1-14",
+    "used_designators": "U1-2,D1-2,#PWR1-5,C1-3,Q1-5,R1-10",
     "variants": []
   },
   "sheets": [
     [
-      "1899ce1e-c210-4160-83a8-e5a7e97aa702",
-      "Final Circuit"
+      "5a583db8-a535-4166-9926-56d734581311",
+      "High Side"
     ],
     [
-      "403adfe1-51af-4c7e-94f3-ace1a53bb045",
-      "Test 1.1"
-    ],
-    [
-      "7985d7b0-cba1-44f6-bb68-92c1e6b0735c",
-      "Test 1.2"
-    ],
-    [
-      "9fe3796c-aa4a-405e-be5a-a1060b4d996f",
-      "Test 2.1"
-    ],
-    [
-      "e8c89e13-2fc2-40fb-b5c1-4374b244dd0a",
-      "Test 2.2"
-    ],
-    [
-      "424f3e55-bd99-4bdd-822e-1fe4d61e0272",
-      "Test 2.3"
-    ],
-    [
-      "de91f18d-f6dc-470d-8e5f-fdd14f0fa08b",
-      "Test 2.4"
+      "acb6d58f-17eb-46bf-805a-64edbdb6e1b5",
+      "Low Side"
     ]
   ],
   "text_variables": {},
