@@ -2003,7 +2003,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "008436c6-8f0b-4307-b914-f75a82e74541")
-		(property "Reference" "R3"
+		(property "Reference" "R7"
 			(at 91.694 55.626 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2091,7 +2091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05490c65-871a-4e98-bd9b-4611c2f631d1")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR04"
 			(at 58.42 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -2272,6 +2272,12 @@
 					(unit 1)
 				)
 			)
+			(project "LVC Simplied"
+				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2286,7 +2292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28c0e82c-6982-4087-b58a-52277c39f1b8")
-		(property "Reference" "Q1"
+		(property "Reference" "Q3"
 			(at 69.85 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2407,7 +2413,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "36fea3fa-028d-4d29-bec7-2dba55d06bd3")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 53.086 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2496,7 +2502,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4da36333-3161-414d-bb53-deaab29adb00")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 93.98 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2670,7 +2676,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8423dd1e-b395-4f9f-b845-828d62e30c87")
-		(property "Reference" "R6"
+		(property "Reference" "R10"
 			(at 121.92 54.864 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2758,7 +2764,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "92787e12-19a6-4ed3-a5ab-c6ab0ee09a3f")
-		(property "Reference" "R1"
+		(property "Reference" "R6"
 			(at 54.61 70.104 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2846,7 +2852,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a1c72dd8-cf73-4468-85d4-a366de662f19")
-		(property "Reference" "R4"
+		(property "Reference" "R8"
 			(at 111.506 53.086 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2935,7 +2941,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd3771fe-60e7-4ee9-be00-88fe188e7f9e")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 123.19 65.0874 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3100,6 +3106,12 @@
 					(unit 1)
 				)
 			)
+			(project "LVC Simplied"
+				(path "/acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
+					(reference "R2")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3113,7 +3125,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f9e3431d-bba7-4bb4-8927-ca1cb458fb7f")
-		(property "Reference" "R5"
+		(property "Reference" "R9"
 			(at 111.252 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3195,5 +3207,4 @@
 			(page "2")
 		)
 	)
-	(embedded_fonts no)
 )

@@ -2172,10 +2172,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8bfbe77e-b336-40b9-9d5b-ea2b55d566f7")
+			(uuid "8bfbe77e-b336-40b9-9d5b-ea2b55d566f8")
 		)
 		(pin "1"
-			(uuid "91569b2c-2d7d-4c0f-9d76-85a44fc3a258")
+			(uuid "91569b2c-2d7d-4c0f-9d76-85a44fc3a259")
 		)
 		(instances
 			(project "LVC Simplied"
@@ -2415,10 +2415,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8bfbe77e-b336-40b9-9d5b-ea2b55d566f7")
+			(uuid "8bfbe77e-b336-40b9-9d5b-ea2b55d566f9")
 		)
 		(pin "1"
-			(uuid "91569b2c-2d7d-4c0f-9d76-85a44fc3a258")
+			(uuid "91569b2c-2d7d-4c0f-9d76-85a44fc3a25a")
 		)
 		(instances
 			(project "LVC Simplied"
@@ -2759,10 +2759,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "8bfbe77e-b336-40b9-9d5b-ea2b55d566f7")
+			(uuid "8bfbe77e-b336-40b9-9d5b-ea2b55d566fa")
 		)
 		(pin "1"
-			(uuid "91569b2c-2d7d-4c0f-9d76-85a44fc3a258")
+			(uuid "91569b2c-2d7d-4c0f-9d76-85a44fc3a25b")
 		)
 		(instances
 			(project "LVC Simplied"
