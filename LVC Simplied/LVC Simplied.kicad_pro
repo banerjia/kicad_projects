@@ -299,9 +299,9 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 1,
     "annotation": {
-      "method": 0,
+      "method": 1,
       "sort_order": 0
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
@@ -419,9 +419,14 @@
         "filename": "low_side_switch.kicad_sch",
         "name": "Low Side",
         "uuid": "acb6d58f-17eb-46bf-805a-64edbdb6e1b5"
+      },
+      {
+        "filename": "low_side_v2.kicad_sch",
+        "name": "Low Side V2",
+        "uuid": "acf1d004-e3c6-4777-a04e-3159bc80272a"
       }
     ],
-    "used_designators": "R1-10,C1-3,#PWR1-5,D1-2,Q1-5,U1-2",
+    "used_designators": "R1-16,R201-206,R301-311,C1-4,C201-202,C301,#PWR1-6,#PWR201-202,#PWR301-302,D1-3,D201,D301-303,Q1-5,Q201-202,Q301,U1-3,U201,U301-303",
     "variants": []
   },
   "sheets": [
@@ -432,6 +437,10 @@
     [
       "acb6d58f-17eb-46bf-805a-64edbdb6e1b5",
       "Low Side"
+    ],
+    [
+      "acf1d004-e3c6-4777-a04e-3159bc80272a",
+      "Low Side V2"
     ]
   ],
   "text_variables": {},
